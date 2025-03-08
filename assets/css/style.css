@@ -3,7 +3,7 @@
 Theme Name:     Payra
 Version:        1.0.0
 Author:         themepresss
-¸ü¶à¾«Æ·Ä£°åÇë·ÃÎÊ£ºhttp://www.bootstrapmb.com
+ï¿½ï¿½ï¿½à¾«Æ·Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½http://www.bootstrapmb.com
 =========================================================*/
 /*=======================================================
 TABLE OF CONTENTS:
@@ -186,7 +186,6 @@ button:focus {
     position: relative;
     text-transform: uppercase;
     margin: 0.31em 0 0;
-    color: ;
     color: #fff;
     margin-bottom: 50px;
     margin-top: 0;
@@ -1554,16 +1553,40 @@ Image at skills area
 .img3D img {
   filter: invert(1);
   position: relative;
-  top: -102px;
+  top: 0px;
   height: 55px;
 }
 
 .img-cpp img {
   filter: invert(0.8);
   position: relative;
-  top: -102px;
+  top: 0px;
   height: 55px;
 }
+
+.img-ml img {
+  filter: invert(0.8);
+  position: relative;
+  top: 0px;
+  height: 55px;
+}
+
+.img-vr img {
+  filter: invert(0.8);
+  position: relative;
+  top: 0px;
+  height: 55px;
+}
+
+.img-unity img {
+  filter: invert(0.8);
+  position: relative;
+  top: 0px;
+  height: 55px;
+}
+
+
+
 
 /*=====================================
 0.6 service-area start
@@ -1597,31 +1620,91 @@ Image at skills area
     -moz-border-radius: 50%;
     border-radius: 50%;
     color: #ddd;
-    margin: auto;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .service-section .services-icon-wrapper .service-dot {
-    width: 100%;
-    height: 100%;
-    left: 56%;
-    top: 8%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #949494;
 }
+
 .service-section .services-icon-wrapper .service-dot:nth-child(1) {
+    right: -7px;
+    top: 0%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation: service-dot_1 2s infinite linear;
+    -moz-animation: service-dot_1 2s infinite linear;
+    -o-animation: service-dot_1 2s infinite linear;
+    animation: service-dot_1 2s infinite linear;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.service-section .services-wrapper:hover .service-dot:nth-child(1) {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running; }
+
+.service-section .services-icon-wrapper .service-dot:nth-child(2) {
+  top: -7px;
+  right: 40%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-animation: service-dot_1 2s infinite linear;
-  -moz-animation: service-dot_1 2s infinite linear;
-  -o-animation: service-dot_1 2s infinite linear;
-  animation: service-dot_1 2s infinite linear;
+  -webkit-animation: service-dot_2 2s infinite linear;
+  -moz-animation: service-dot_2 2s infinite linear;
+  -o-animation: service-dot_2 2s infinite linear;
+  animation: service-dot_2 2s infinite linear;
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
 }
 
-.service-section .services-wrapper:hover .service-dot:nth-child(1) {
+.service-section .services-wrapper:hover .service-dot:nth-child(1),
+.service-section .services-wrapper:hover .service-dot:nth-child(2) {
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running; }
+
+.service-section .services-icon-wrapper .service-dot:nth-child(3) {
+  bottom: -7px;
+  right: 40%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-animation: service-dot_1 3s infinite linear;
+  -moz-animation: service-dot_1 3s infinite linear;
+  -o-animation: service-dot_1 3s infinite linear;
+  animation: service-dot_1 3s infinite linear;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.service-section .services-wrapper:hover .service-dot:nth-child(1),
+.service-section .services-wrapper:hover .service-dot:nth-child(2),
+.service-section .services-wrapper:hover .service-dot:nth-child(3) {
   -webkit-animation-play-state: running;
   -moz-animation-play-state: running;
   -o-animation-play-state: running;
@@ -1667,9 +1750,13 @@ Image at skills area
 @-webkit-keyframes service-dot_2 {
   0% {
     -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     transform: rotate(180deg); }
   100% {
     -webkit-transform: rotate(540deg);
+    -moz-transform: rotate(540deg);
+    -o-transform: rotate(540deg);
     transform: rotate(540deg); } }
 
 @-moz-keyframes service-dot_2 {
@@ -1690,15 +1777,16 @@ Image at skills area
 
 @keyframes service-dot_2 {
   0% {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg); }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(540deg);
-    -moz-transform: rotate(540deg);
-    -o-transform: rotate(540deg);
-    transform: rotate(540deg); } }
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
 .service-section .services-icon {
     color: #ffc600;
     -webkit-text-fill-color: transparent;
@@ -1709,17 +1797,23 @@ Image at skills area
 
 .services-icon-wrapper i.fi {
     position: absolute;
-    left: 30px;
-    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+    z-index: 5;
 }
 .dots {
-    width: 15px;
-    height: 15px;
-    background: #666;
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: #fff;
     border-radius: 50%;
-    left: 15px;
-    top: 0;
-    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .service-content h2{
   font-size: 22px;
@@ -2564,4 +2658,93 @@ border: 1px solid #666;
 }
 .contact-area  .section-title h2{
     margin-bottom: 100px;
+}
+
+/* Skills Section Fixes */
+.service-section {
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.services-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.service-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content h2 {
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.services-icon-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #666;
+    font-size: 50px;
+    background: transparent;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #ddd;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-ml, .img-vr, .img-unity, .img-cpp, .img3D {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    z-index: 5;
+}
+
+.img-ml img, .img-vr img, .img-unity img, .img-cpp img, .img3D img {
+    max-height: 60px;
+    max-width: 60px;
+    object-fit: contain;
+}
+
+.fi.flaticon-laptop {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+}
+
+/* Fix for the second row specifically */
+@media (min-width: 992px) {
+    .service-area .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .service-area .col-lg-4 {
+        display: flex;
+        margin-bottom: 30px;
+    }
 }

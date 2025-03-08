@@ -31,6 +31,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/dot-fix.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -143,8 +144,10 @@
                         <div class="col-lg-6">
                             <div class="about-content">
                                 <h2>About Me</h2>
-                                <p>My name is HongFei Huang. I'm currently an undergraduate student at the University of Waterloo, where I'm studying Computer Engineering.</p>
-                                <p>I have set a firm goal for myself to become a 3D graphics developer. I'm passionate about the blend of programming and entertainment, and I strive to channel this passion into creating fun and sophisticated projects.</p>
+                                <p>My name is HongFei Huang. I'm currently an Master's student at the University of Waterloo, where I'm studying Computer Science -- Specialized in Computer Graphics + VR.</p>
+                                <p>When I first tried Half-Life: Alyx, I was blown away by the impressiveness and crazy interactions of the game. 
+                                    Since then, I've been passionate about creating fun stuff in VR and started to dive into computer graphics. 
+                                    I believe that the power of VR + CG will fundamentally change the entertainment industry one day.</p>
                                 <a href="assets/Resume/Resume.pdf" class="theme-btn">Download Resume</a>
                             </div>
                         </div>
@@ -167,7 +170,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="service-section">
                             <div class="services-wrapper">
-                                <div class="services-icon-wrapper services-icon-wrapper">
+                                <div class="services-icon-wrapper">
                                     <div class="service-dot">
                                        <div class="dots"></div>
                                     </div>
@@ -175,7 +178,7 @@
                                 </div>
                                 <div class="service-content">
                                     <h2>System Programming</h2>
-                                    <p> Experienced with embedded programming. Designed projects such as Fully Pipelined RISC-V CPU and simple RTOS on the KIEL Dev Board</p>
+                                    <p> Experienced with embedded + kernel programming. Designed projects such as Fully Pipelined RISC-V CPU and Kernel Task Scheduler</p>
                                 </div>
                             </div>
                         </div>
@@ -187,14 +190,13 @@
                                     <div class="service-dot">
                                        <div class="dots"></div>
                                     </div>
-<!--                                    <i class="fi flaticon-web-programming"></i>-->
                                     <div class = "img3D">
                                         <img src="assets/images/3d-model.png">
                                     </div>
                                 </div>
                                 <div class="service-content">
                                     <h2>Computer Graphics</h2>
-                                    <p> Currently studying implementations of Rasterization, Ray-Tracing and Physics based animation on modern devices</p>
+                                    <p> Implementations of Rasterization, Ray-Tracing and Physics based animation on modern devices</p>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +208,6 @@
                                     <div class="service-dot">
                                        <div class="dots"></div>
                                     </div>
-<!--                                    <i class="fi flaticon-color"></i>-->
                                     <div class = "img-cpp">
                                         <img src="assets/images/c-logo.png">
                                     </div>
@@ -218,55 +219,60 @@
                             </div>
                         </div>
                     </div>
-<!--                    IMPORTANT: ADD MORE SKILLS IN FUTURE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-<!--                    <div class="col-lg-4 col-md-6 col-sm-6">-->
-<!--                        <div class="service-section">-->
-<!--                            <div class="services-wrapper">-->
-<!--                                <div class="services-icon-wrapper">-->
-<!--                                    <div class="service-dot">-->
-<!--                                       <div class="dots"></div>-->
-<!--                                    </div>-->
-<!--                                    <i class="fi flaticon-smartphone"></i>-->
-<!--                                </div>-->
-<!--                                <div class="service-content">-->
-<!--                                    <h2>Responsive Design</h2>-->
-<!--                                    <p> am an expert web designer and developer. Contrary to popular belief, Lorem Ipsum is not simply random text. It has</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-4 col-md-6 col-sm-6">-->
-<!--                        <div class="service-section">-->
-<!--                            <div class="services-wrapper">-->
-<!--                                <div class="services-icon-wrapper">-->
-<!--                                    <div class="service-dot">-->
-<!--                                       <div class="dots"></div>-->
-<!--                                    </div>-->
-<!--                                    <i class="fi flaticon-settings-gears"></i>-->
-<!--                                </div>-->
-<!--                                <div class="service-content">-->
-<!--                                    <h2>Branding Identity</h2>-->
-<!--                                    <p> am an expert web designer and developer. Contrary to popular belief, Lorem Ipsum is not simply random text. It has</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-4 col-md-6 col-sm-6">-->
-<!--                        <div class="service-section">-->
-<!--                            <div class="services-wrapper">-->
-<!--                                <div class="services-icon-wrapper">-->
-<!--                                    <div class="service-dot">-->
-<!--                                       <div class="dots"></div>-->
-<!--                                    </div>-->
-<!--                                    <i class="fi flaticon-support"></i>-->
-<!--                                </div>-->
-<!--                                <div class="service-content">-->
-<!--                                    <h2>24/Support</h2>-->
-<!--                                    <p> am an expert web designer and developer. Contrary to popular belief, Lorem Ipsum is not simply random text. It has</p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                   <div class="col-lg-4 col-md-6 col-sm-6">
+                       <div class="service-section">
+                           <div class="services-wrapper">
+                               <div class="services-icon-wrapper">
+                                   <div class="service-dot">
+                                      <div class="dots"></div>
+                                   </div>
+                                    <div class = "img-ml">
+                                        <img src="assets/images/machine-learning.png">
+                                    </div>
+                               </div>
+                               <div class="service-content">
+                                   <h2>Machine Learning</h2>
+                                   <p> Familiar with Machine Learning/Reinforcement Learning algorithms and their applications in real-world problems</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 col-sm-6">
+                       <div class="service-section">
+                           <div class="services-wrapper">
+                               <div class="services-icon-wrapper">
+                                   <div class="service-dot">
+                                      <div class="dots"></div>
+                                   </div>
+                                    <div class = "img-vr">
+                                        <img src="assets/images/vr-glasses.png">
+                                    </div>
+                               </div>
+                               <div class="service-content">
+                                   <h2>Virtual Reality</h2>
+                                   <p> Specialized and passionate in VR/AR Research and Development with hands-on projects(VR GAViewer and Universal Gestures)</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg-4 col-md-6 col-sm-6">
+                       <div class="service-section">
+                           <div class="services-wrapper">
+                               <div class="services-icon-wrapper">
+                                   <div class="service-dot">
+                                      <div class="dots"></div>
+                                   </div>
+                                    <div class = "img-unity">
+                                        <img src="assets/images/unity.png">
+                                    </div>
+                               </div>
+                               <div class="service-content">
+                                   <h2>Unity Development</h2>
+                                   <p> Skilled in Unity and its ecosystem(especially in VR/AR development) with multiple projects running on Meta Quest 3</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -283,7 +289,7 @@
                             </div>
                             <ul>
                                 <li><a data-filter="*" href="#" class="current">All</a></li>
-                                <li><a data-filter=".Computer-Graphics" href="#">Computer Graphics</a></li>
+                                <li><a data-filter=".Computer-Graphics" href="#">Computer Graphics + VR</a></li>
                                 <li><a data-filter=".Embedded-Design" href="#">Embedded Design</a></li>
                                 <li><a data-filter=".Others" href="#">Others</a></li>
                             </ul>
